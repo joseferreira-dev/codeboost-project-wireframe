@@ -32,7 +32,9 @@ class ContactController {
 
     if (!name) {
       return res.status(400).json({ error: 'Name is required' });
-    } else (!email && !phone) {
+    }
+
+    if (!email && !phone) {
       return res.status(400).json({ error: 'You need to insert at least a e-mail or phone number' });
     }
 
