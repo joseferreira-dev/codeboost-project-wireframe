@@ -14,5 +14,6 @@ module.exports = {
     'class-methods-use-this': 'off',
     'linebreak-style': 0,
     'consistent-return': 'off',
+    'object-curly-newline': 'off',
   },
 };
