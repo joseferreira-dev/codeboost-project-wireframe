@@ -76,7 +76,7 @@ class ContactController {
       return res.status(400).json({ error: 'This e-mail is already in use' });
     }
 
-    const contact = await ContactRepository.update({
+    const contact = await ContactRepository.update(id, {
       name,
       email,
       phone,
